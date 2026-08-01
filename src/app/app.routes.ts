@@ -13,5 +13,11 @@ export const routes: Routes = [
     loadComponent: () => {
       return import('./todos/todos').then((m) => m.Todos);
     }
-  }
+  },
+  {
+    path: 'aaronsgame',
+    loadComponent: () => {
+      return import('./components/aarons-game/aarons-game').then((m) => m.AaronsGame);
+    }
+  },
 ];
