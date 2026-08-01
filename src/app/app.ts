@@ -1,16 +1,24 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Home } from './home/home';
+import { Header } from './components/header/header';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Home, Header],
   template: `
-    <h1>Hello, {{ title() }}</h1>
-
-    <router-outlet />
+    <app-header />
+    <main>
+      <app-home />
+    </main>
+    <router-outlet> </router-outlet>
   `,
-  styles: [],
+  styles: [`
+    main {
+      padding: 16px;
+    }
+  `],
 })
 export class App {
-  protected readonly title = signal('showcase');
+  protected readonly title = signal('dirty bird');
 }
