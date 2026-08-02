@@ -1,0 +1,23 @@
+.solutions-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.solution-card {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.solution-table {
+  border-collapse: collapse;
+}
+
+.solution-table td {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  vertical-align: middle;
+}

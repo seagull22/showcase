@@ -49,7 +49,7 @@ function getSlots(grid, targetValue) {
   var position;
 
   if (targetValue == 0) {
-    // initially push the entire grid because all cells are free 
+    // initially push the entire grid because all cells are free
     // and there are no placement restrictions on an empty grid
     for(i=0; i < grid.length; i++) {
       slots.push(makeCell(grid[i].position, 0, grid[i].remotePositions));

@@ -1,2 +1,28 @@
 <h3>Aarons Game</h3>
-<p>attempts: {{ attempts }}</p>
+<p>attempts: {{ attempts() }}</p>
+<p>solutions found: {{ solutions().length }}</p>
+
+<div class="solutions-grid" *ngIf="solutions().length > 0">
+  <div class="solution-card" *ngFor="let solution of solutions()">
+    <table class="solution-table">
+      <tr>
+        <td></td>
+        <td>{{ solution[0]?.cellValue }}</td>
+        <td>{{ solution[1]?.cellValue }}</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>{{ solution[2]?.cellValue }}</td>
+        <td>{{ solution[3]?.cellValue }}</td>
+        <td>{{ solution[4]?.cellValue }}</td>
+        <td>{{ solution[5]?.cellValue }}</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>{{ solution[6]?.cellValue }}</td>
+        <td>{{ solution[7]?.cellValue }}</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+</div>
