@@ -1,17 +1,3 @@
-.aarons-game {
-  display: flex;
-  gap: 4px;
-
-  div {
-    &:first-child {
-      font-weight: bold;
-    }
-    &:last-child {
-      font-size: 0.8em;
-    }
-  }
-}
-
 header {
   display: flex;
   padding-inline: 16px;
@@ -42,9 +28,13 @@ header {
       padding-left: 2em;
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 12px;
+      justify-content: space-evenly;
 
       li {
+        display:flex;
+        gap: 5em;
+        align-items: center;
         cursor: pointer;
         &:hover {
           color: #0313f5;
@@ -52,4 +42,14 @@ header {
       }
     }
   }
+}
+
+.nav-left {
+  text-align: left;
+  flex: 1;
+}
+
+.nav-right {
+  text-align: right;
+  white-space: nowrap;
 }
