@@ -1,8 +1,22 @@
+.aarons-game {
+  display: flex;
+  gap: 4px;
+
+  div {
+    &:first-child {
+      font-weight: bold;
+    }
+    &:last-child {
+      font-size: 0.8em;
+    }
+  }
+}
+
 header {
   display: flex;
   padding-inline: 16px;
   padding-block: 8px;
-  background-color: #333;
+  background-color: #46923c;
   color: white;
 
   nav {
@@ -18,7 +32,7 @@ header {
     h1 span {
       cursor: pointer;
       &:hover {
-        color: #777;
+        color: #0313f5;
       }
     }
 
@@ -33,7 +47,7 @@ header {
       li {
         cursor: pointer;
         &:hover {
-          color: #777;
+          color: #0313f5;
         }
       }
     }
